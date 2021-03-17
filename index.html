@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+
+    <title>Input</title>
+</head>
+<body>
+    <h1>Look at this fancy input</h1>
+    <div class="panel panel--info panel--no-title u-mb-s">
+        <div class="panel__body" >
+            <div class="field question__answer">
+                <label 
+                for="grouped"
+                class="label  label--with-description"
+                >
+                    Enter your <input 
+                    type=text placeholder="16" maxlength="3" id="length" class="input--in--text"
+                    />-character access code
+                </label>
+                <span
+                id="description-hint"
+                class="label__description  input--with-description">
+                        Observe as it is split into groups of <input 
+                        type=text placeholder="4" maxlength="3" id="group-size" class="input--in--text"
+                    />
+                </span>
+                <input 
+                type="text" name="grouped" id="grouped" 
+                maxlength="19.0" data-group-size="4" autocomplete="off" autocapitalize="characters" 
+                aria-describedby="description-hint"
+                class="input input--text input-type__input   grouped__input js-grouped u-mb-xs"
+
+                />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
